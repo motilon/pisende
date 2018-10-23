@@ -1,0 +1,1 @@
+{"version":3,"sources":["1-utilities/basic.scss"],"names":[],"mappings":"AAAA,IACE,+BAAsB,CAAtB,uBAAsB,EACvB;;AAED,KACE,mCAAkC,CAClC,kBAAiB,CACjB,gBAAe,EAChB","file":"../../1-utilities/basic.css","sourcesContent":["* {\n  box-sizing: border-box;\n}\n\nh1 {\n  font-family: Helvetica, sans-serif;\n  font-weight: bold;\n  font-size: 28px;\n}"]}
