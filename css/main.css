@@ -2,6 +2,18 @@
 
 h1 { font-family: Helvetica, sans-serif; font-weight: bold; font-size: 28px; }
 
+.highlight-container, .highlight { position: relative; }
+
+.highlight-container { display: inline-block; }
+
+.highlight-container:before, .highlight-container:after { content: ' '; display: block; height: 90%; width: 100%; margin-left: -3px; margin-right: -3px; position: absolute; }
+
+.highlight-container:before { background: rgba(234, 221, 6, 0.9); -webkit-transform: rotate(2deg); transform: rotate(2deg); top: -1px; left: -1px; }
+
+.highlight-container:after { background: rgba(234, 210, 6, 0.6); top: 3px; right: -2px; }
+
+.highlight-container .highlight { color: #333; z-index: 4; }
+
 @font-face { font-family: "nexa"; font-weight: 400; font-style: normal; src: url("../fonts/NexaRegular.otf") format("opentype"); }
 
 @font-face { font-family: "nexa"; font-weight: 700; font-style: normal; src: url("../fonts/NexaBold.otf") format("opentype"); }
@@ -42,11 +54,13 @@ header.header .header__logo { margin-right: -15px; }
 
 .ambiente { font-family: 'nexa', sans-serif; font-weight: 400; margin-bottom: 24px; }
 
-.ambiente__imagen img { width: 80%; max-width: 180px; }
+.ambiente__imagen img { width: 80%; max-width: 180px; -webkit-transition: all .3s ease-in-out; transition: all .3s ease-in-out; }
 
 @media screen and (max-width: 575px) { .ambiente__imagen img { max-width: 120px; } }
 
-.ambiente__imagen:hover { cursor: pointer; opacity: .8; }
+.ambiente__imagen img:hover { -webkit-transform: scale(1.1); transform: scale(1.1); }
+
+.ambiente__imagen:hover { cursor: pointer; opacity: .95; }
 
 .ambiente__titulo { font-size: 18px; letter-spacing: 3px; margin: 1rem auto; }
 
@@ -56,13 +70,13 @@ header.header .header__logo { margin-right: -15px; }
 
 .ambiente__medidas { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 
-.ambiente__talla { width: 40px; height: 40px; line-height: 42px; margin-right: 12px; text-align: center; }
+.ambiente__talla { width: 40px; height: 40px; line-height: 42px; margin-right: 12px; text-align: center; -webkit-transition: all .3s ease-in-out; transition: all .3s ease-in-out; }
 
 .ambiente__talla:last-child { margin-right: 0; }
 
 .ambiente__talla span { font-size: 16px; color: #fff; }
 
-.ambiente__talla:hover { cursor: pointer; background-color: #C1CE00 !important; }
+.ambiente__talla:hover { cursor: pointer; background-color: #C1CE00 !important; -webkit-transform: scale(1.1); transform: scale(1.1); }
 
 .ambiente--AZ .ambiente__talla { background-color: #236293; }
 
