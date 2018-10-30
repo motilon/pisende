@@ -26,6 +26,57 @@ h1 { font-family: Helvetica, sans-serif; font-weight: bold; font-size: 28px; }
 
 @font-face { font-family: "helvetica-neue"; font-weight: 700; font-style: normal; src: url("../fonts/HelveticaNeueLTStd-Bd.otf") format("opentype"); }
 
+.header__espacio-logo { width: 80px; }
+
+.header__espacio-titulo h3 { color: white; font-family: 'nexa', sans-serif; letter-spacing: 2px; font-size: 28px; line-height: 100%; margin-top: 12px; }
+
+.header__sizes { display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+.header__size { width: 30px; height: 30px; line-height: 32px; margin-right: 12px; text-align: center; -webkit-transition: all .3s ease-in-out; transition: all .3s ease-in-out; }
+
+.header__size.active { background: white; }
+
+.header__size.active span { color: #000; }
+
+.header__size:last-child { margin-right: 0; }
+
+.header__size span { font-size: 20px; font-weight: 400; color: white; }
+
+.header__size:hover { cursor: pointer; background-color: #C1CE00 !important; -webkit-transform: scale(1.1); transform: scale(1.1); }
+
+.header__filtros button { background: #fff; padding: 10px 24px; color: #808080; font-size: 12px; letter-spacing: 2px; font-family: 'nexa', sans-serif; text-transform: uppercase; }
+
+.header .header__logo { position: absolute; right: 0; top: 0; }
+
+@media screen and (max-width: 575px) { .header .container-fluid { -ms-flex-wrap: wrap; flex-wrap: wrap; padding-bottom: 7px; }
+  .header .header__icon, .header .header__espacio { margin-top: 10px; }
+  .header .header__opciones { -webkit-box-flex: 1; -ms-flex: 1 0 100%; flex: 1 0 100%; margin-top: 10px; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+  .header .header__sizes { margin-left: 0 !important; }
+  .header .header__filtros button { background: #fff; padding: 7px 12px; color: #808080; font-size: 11px; letter-spacing: 2px; }
+  .header__espacio-titulo h3 { font-size: 18px; }
+  .header .header__logo { right: 15px; }
+  .header .header__logo img { height: 50px; } }
+
+.bg--AZ .header { background-color: #236293 !important; }
+
+.bg--AZ .header .container-fluid { background-color: #236293 !important; }
+
+.bg--AZ .espacio__menu ul.nav .nav-item.active, .bg--AZ .espacio__menu ul.nav .nav-item:hover { background-color: #236293 !important; cursor: pointer; }
+
+.bg--AZ .espacio__menu ul.nav .nav-item.active .nav-link, .bg--AZ .espacio__menu ul.nav .nav-item:hover .nav-link { color: #fff !important; }
+
+.bg--NA .header { background-color: #e97721 !important; }
+
+.bg--NA .header .container-fluid { background-color: #e97721 !important; }
+
+.bg--CAF .header { background-color: #bf7200 !important; }
+
+.bg--CAF .header .container-fluid { background-color: #bf7200 !important; }
+
+.bg--AGM .header { background-color: #34ac90; }
+
+.bg--AGM .header .container-fluid { background-color: #34ac90 !important; }
+
 .portada { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; background: url("../img/bg_home.jpg") no-repeat left top; background-size: cover; height: 100vh; }
 
 @media screen and (max-width: 575px) { .portada { height: auto !important; } }
@@ -40,7 +91,7 @@ header.header .header__logo { margin-right: -15px; }
 
 .main__copy { margin: 100px auto 80px; }
 
-@media screen and (max-width: 575px) { .main__copy { margin: 36px auto; } }
+@media screen and (max-width: 575px) { .main__copy { margin: 36px auto 0; } }
 
 .main__copy h1 { letter-spacing: 5px; }
 
@@ -51,6 +102,8 @@ header.header .header__logo { margin-right: -15px; }
 @media screen and (max-width: 575px) { .main__copy span { font-size: 16px; } }
 
 .main__ambientes { margin-bottom: 48px; }
+
+@media screen and (max-width: 575px) { .main__ambientes { margin-top: 16px !important; } }
 
 .ambiente { font-family: 'nexa', sans-serif; font-weight: 400; margin-bottom: 24px; }
 
@@ -64,7 +117,7 @@ header.header .header__logo { margin-right: -15px; }
 
 .ambiente__titulo { font-size: 18px; letter-spacing: 3px; margin: 1rem auto; }
 
-@media screen and (max-width: 575px) { .ambiente__titulo { font-size: 16px; letter-spacing: 1.5px; } }
+@media screen and (max-width: 575px) { .ambiente__titulo { font-size: 14px; letter-spacing: 1.5px; } }
 
 .ambiente .linea { width: 80%; border: 1px solid rgba(0, 0, 0, 0.8); margin: 0 auto 24px; }
 
@@ -85,5 +138,47 @@ header.header .header__logo { margin-right: -15px; }
 .ambiente--CAF .ambiente__talla { background-color: #bf7200; }
 
 .ambiente--AGM .ambiente__talla { background-color: #34ac90; }
+
+.pisende.container-fluid { padding-right: 0; padding-left: 0; margin-right: auto; margin-left: auto; }
+
+.espacio { height: 432px; background-size: cover; background-position: center center; position: relative; }
+
+@media screen and (min-width: 768px) { .espacio { height: 720px; } }
+
+@media screen and (min-width: 992px) { .espacio { height: 100vh; } }
+
+.espacio .espacio__opciones { position: absolute; bottom: 0px; left: 0px; width: 100%; height: 60px; background: #AA0635; }
+
+.espacio__menu { padding-top: 150px; }
+
+.espacio__menu h3 { color: #009966; font-size: 16px; font-family: 'nexa', sans-serif; letter-spacing: 1px; padding-left: 30px; margin-bottom: 50px; }
+
+.espacio__menu ul.nav { padding: 0; margin: 0; }
+
+.espacio__menu ul.nav .nav-item { padding-left: 30px; padding-right: 30px; -webkit-transition: all .3s; transition: all .3s; }
+
+.espacio__menu ul.nav .nav-link { padding-right: 0; padding-left: 0; font-size: 14px; font-family: 'nexa', sans-serif; color: #4D4D4D; letter-spacing: 3px; }
+
+.espacio__thumbnails { padding-top: 150px; height: 100vh; }
+
+.espacio__thumbnails h3 { color: #008165; font-size: 16px; font-family: 'nexa', sans-serif; letter-spacing: 1px; margin-bottom: 50px; }
+
+.espacio__thumbnails .galeria_wrap { max-height: 85%; overflow-y: scroll; margin-right: 24px; }
+
+.espacio__thumbnails .galeria .galeria__item span { font-size: 14px; font-family: 'nexa', sans-serif; color: #4D4D4D; letter-spacing: 3px; }
+
+.bg-gray { background: #f4f4f4; }
+
+/* width */
+::-webkit-scrollbar { width: 6px; }
+
+/* Track */
+::-webkit-scrollbar-track { background: #f4f4f4; }
+
+/* Handle */
+::-webkit-scrollbar-thumb { background: #ccc; }
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover { background: #555; }
 
 /*# sourceMappingURL=maps/main.css.map */
