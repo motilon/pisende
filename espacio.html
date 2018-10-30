@@ -37,7 +37,7 @@
         </header>
         <section class="pisende container-fluid">
             <div class="row no-gutters">
-                <article class="espacio col-xl-7 col-lg-6 col-md-12" style="background-image:url('img/bano.jpg')">
+                <article class="espacio col-xl-7 col-lg-6 col-md-12" id="imagenFondoEspacio" style="background-image:url('img/bano.jpg')">
                     <div class="espacio__opciones d-flex">
                         <div class="opcion d-flex">
                             <div class="opcion__icono"><img class="img-fluid" src="img/btn_descargas.svg"></div>
@@ -66,11 +66,11 @@
                         <h3 class="text-center">PISOS</h3>
                         <div class="galeria_wrap">
                             <div class="galeria d-flex flex-row flex-lg-column flex-wrap justify-content-center">
-                                <div class="galeria__item d-flex flex-column mb-3 align-items-center"><a class="galeria__imagen" href="#"><img class="img-fluid" src="img/p1.jpg"></a><span class="my-2 text-center">REF:</span></div>
-                                <div class="galeria__item d-flex flex-column mb-3 align-items-center"><a class="galeria__imagen" href="#"><img class="img-fluid" src="img/p2.jpg"></a><span class="my-2 text-center">REF:</span></div>
-                                <div class="galeria__item d-flex flex-column mb-3 align-items-center"><a class="galeria__imagen" href="#"><img class="img-fluid" src="img/p3.jpg"></a><span class="my-2 text-center">REF:</span></div>
-                                <div class="galeria__item d-flex flex-column mb-3 align-items-center"><a class="galeria__imagen" href="#"><img class="img-fluid" src="img/p4.jpeg"></a><span class="my-2 text-center">REF:</span></div>
-                                <div class="galeria__item d-flex flex-column mb-3 align-items-center"><a class="galeria__imagen" href="#"><img class="img-fluid" src="img/p5.jpeg"></a><span class="my-2 text-center">REF:</span></div>
+                                <div class="galeria__item d-flex flex-column mb-3 align-items-center"><a class="galeria__imagen" href="#" data-imagen="img/bano.jpg"><img class="img-fluid" src="img/p1.jpg"></a><span class="my-2 text-center">REF:</span></div>
+                                <div class="galeria__item d-flex flex-column mb-3 align-items-center"><a class="galeria__imagen" href="#" data-imagen="img/bano2.jpg"><img class="img-fluid" src="img/p2.jpg"></a><span class="my-2 text-center">REF:</span></div>
+                                <div class="galeria__item d-flex flex-column mb-3 align-items-center"><a class="galeria__imagen" href="#" data-imagen="img/bano3.jpg"><img class="img-fluid" src="img/p3.jpg"></a><span class="my-2 text-center">REF:</span></div>
+                                <div class="galeria__item d-flex flex-column mb-3 align-items-center"><a class="galeria__imagen" href="#" data-imagen="img/bano4.jpg"><img class="img-fluid" src="img/p4.jpeg"></a><span class="my-2 text-center">REF:</span></div>
+                                <div class="galeria__item d-flex flex-column mb-3 align-items-center"><a class="galeria__imagen" href="#" data-imagen="img/bano5.jpg"><img class="img-fluid" src="img/p5.jpeg"></a><span class="my-2 text-center">REF:</span></div>
                             </div>
                         </div>
                     </div>
@@ -78,12 +78,12 @@
                 <article class="col-xl-3 col-lg-3 col-md-12 bg-gray d-none d-lg-block">
                     <div class="espacio__menu">
                         <h3>COMBINA MÁS MATERIALES</h3>
-                        <ul class="nav flex-column">
-                            <li class="nav-item active"><a class="nav-link">PISOS</a></li>
-                            <li class="nav-item"><a class="nav-link">PAREDES</a></li>
-                            <li class="nav-item"><a class="nav-link">DECORADOS</a></li>
-                            <li class="nav-item"><a class="nav-link">MUEBLES PARA VESSEL</a></li>
-                            <li class="nav-item"><a class="nav-link">MUEBLES PARA LAVAMANOS</a></li>
+                        <ul class="nav flex-column nav__materiales">
+                            <li class="nav-item active"><a class="nav-link" data-material="1">PISOS</a></li>
+                            <li class="nav-item"><a class="nav-link" data-material="2">PAREDES</a></li>
+                            <li class="nav-item"><a class="nav-link" data-material="3">DECORADOS</a></li>
+                            <li class="nav-item"><a class="nav-link" data-material="4">MUEBLES PARA VESSEL</a></li>
+                            <li class="nav-item"><a class="nav-link" data-material="5">MUEBLES PARA LAVAMANOS</a></li>
                         </ul>
                     </div>
                 </article>
