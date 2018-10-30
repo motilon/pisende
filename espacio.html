@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, , maximum-scale=1.0, user-scalable=no">
         <!--link(rel="icon", type="image/png", href="https://stirpe.co/img/faviconstirpe.png")-->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
         <link rel="stylesheet" href="css/animate.min.css">
         <link rel="stylesheet" href="css/main.css">
     </head>
@@ -25,7 +25,13 @@
                 </div>
                 <div class="header__opciones d-flex align-items-center">
                     <div class="header__sizes ml-5"><a class="header__size active"><span>S</span></a><a class="header__size"><span>M</span></a><a class="header__size"><span>L</span></a></div>
-                    <div class="header__filtros ml-5"><button type="button"><span class="d-none d-sm-inline">Mostrar</span> Filtros</button></div>
+                    <div class="header__filtros d-flex"><button class="btn-filtros d-none d-sm-block" type="button"><span class="d-none d-sm-inline">Mostrar</span> Filtros</button><button class="btn-materiales ml-2 d-none d-sm-block d-lg-none" type="button"> <span class="d-none d-sm-inline">Mostrar</span> Materiales</button>
+                        <div class="dropdown d-sm-none"><button id="verMasHeader" type="button" data-toggle="dropdown"><i class="fas fa-ellipsis-v"></i>
+                                <div class="dropdown-menu"><a class="dropdown-item" href="#">Filtros</a>
+                                    <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Materiales</a>
+                                </div>
+                            </button></div>
+                    </div>
                 </div><a class="header__logo"><img src="img/logo_pisende.png" alt="Logo Pisende."></a>
             </div>
         </header>
@@ -69,7 +75,7 @@
                         </div>
                     </div>
                 </article>
-                <article class="col-xl-3 col-lg-3 col-md-12 bg-gray">
+                <article class="col-xl-3 col-lg-3 col-md-12 bg-gray d-none d-lg-block">
                     <div class="espacio__menu">
                         <h3>COMBINA MÁS MATERIALES</h3>
                         <ul class="nav flex-column">
@@ -83,5 +89,10 @@
                 </article>
             </div>
         </section>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+        <script src="js/vendor/plugins.js"></script>
+        <script src="js/scripts.min.js"></script>
     </body>
 </html>

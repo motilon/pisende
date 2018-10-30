@@ -4,7 +4,7 @@
 
 .page-espacios .header__sizes { display: -webkit-box; display: -ms-flexbox; display: flex; }
 
-.page-espacios .header__size { width: 30px; height: 30px; line-height: 32px; margin-right: 12px; text-align: center; -webkit-transition: all .3s ease-in-out; transition: all .3s ease-in-out; }
+.page-espacios .header__size { width: 25px; height: 25px; line-height: 25px; margin-right: 12px; text-align: center; -webkit-transition: all .2s ease-in; transition: all .2s ease-in; }
 
 .page-espacios .header__size.active { background: white; }
 
@@ -12,22 +12,29 @@
 
 .page-espacios .header__size:last-child { margin-right: 0; }
 
-.page-espacios .header__size span { font-size: 20px; font-weight: 400; color: white; }
+.page-espacios .header__size span { font-size: 16px; font-weight: 400; color: white; }
 
 .page-espacios .header__size:hover { cursor: pointer; background-color: #C1CE00 !important; -webkit-transform: scale(1.1); transform: scale(1.1); }
+
+.page-espacios .header__filtros { margin-left: 16px; }
 
 .page-espacios .header__filtros button { background: #fff; padding: 10px 24px; color: #808080; font-size: 12px; letter-spacing: 2px; font-family: 'nexa', sans-serif; text-transform: uppercase; }
 
 .page-espacios .header .header__logo { position: absolute; right: 0; top: 0; }
 
-@media screen and (max-width: 575px) { .page-espacios .header .container-fluid { -ms-flex-wrap: wrap; flex-wrap: wrap; padding-bottom: 7px; }
+@media screen and (max-width: 991px) { .page-espacios .header .container-fluid { -ms-flex-wrap: wrap; flex-wrap: wrap; padding-bottom: 7px; }
   .page-espacios .header .header__icon, .page-espacios .header .header__espacio { margin-top: 10px; }
   .page-espacios .header .header__opciones { -webkit-box-flex: 1; -ms-flex: 1 0 100%; flex: 1 0 100%; margin-top: 10px; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
   .page-espacios .header .header__sizes { margin-left: 0 !important; }
-  .page-espacios .header .header__filtros button { background: #fff; padding: 7px 12px; color: #808080; font-size: 11px; letter-spacing: 2px; }
+  .page-espacios .header .header__filtros button.btn-filtros { background: #fff; padding: 7px 12px; color: #808080; font-size: 11px; letter-spacing: 2px; }
+  .page-espacios .header .header__filtros button.btn-materiales { background: #009966; padding: 7px 12px; color: #f2f2f2; font-size: 11px; letter-spacing: 2px; }
   .page-espacios .header__espacio-titulo h3 { font-size: 18px; }
   .page-espacios .header .header__logo { right: 15px; }
   .page-espacios .header .header__logo img { height: 50px; } }
+
+@media screen and (min-width: 575px) { .page-espacios .header .header__logo { right: 15px; }
+  .page-espacios .header .header__logo img { height: 80px; }
+  .page-espacios .header__filtros { margin-left: 48px; } }
 
 .bg--AZ .header { background-color: #236293 !important; }
 
@@ -48,5 +55,9 @@
 .bg--AGM .header { background-color: #34ac90; }
 
 .bg--AGM .header .container-fluid { background-color: #34ac90 !important; }
+
+#verMasHeader { background: transparent; color: #fff; border: 0; outline: none; cursor: pointer; }
+
+#verMasHeader .dropdown-item { font-size: 12px; letter-spacing: 1px; }
 
 /*# sourceMappingURL=../maps/4-molecules/header.css.map */
